@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usepackage{naughtyornice}
+\usepackage{pgfplots}
+\pgfmathsetseed{1}%{6}%{11}%{1}
+\pgfplotsset{compat=1.17} 
+
+\setlength{\bleed}{0pt}
+
+\begin{document}
+\begin{tikzpicture}[x=1in, y=1in]
+%\pic[rotate=180] () at (\horizdist, -\vertdist) {scorecard={cross}{cross}{tick}{tick}{tick}{tick}{white}};
+\pic[rotate=180] () at (0,0) {scorecard={cross}{cross}{tick}{tick}{tick}{tick}{white}};
+\pic[rotate=90] () at (0,0) {cardoutline};
+%\pic[rotate=180] () at (-\horizdist, -\vertdist) {scorecard={cross}{cross}{tick}{tick}{tick}{tick}{white}};
+\end{tikzpicture}
+\end{document}

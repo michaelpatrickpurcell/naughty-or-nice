@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+
+\usepackage{naughtyornice}
+\usepackage{pgfplots}
+\pgfmathsetseed{6}%{11}%{1}
+\pgfplotsset{compat=1.17} 
+
+\begin{document}
+\begin{tikzpicture}[x=1in, y=1in]
+\path (-105mm, -148.5mm) -- (105mm, 148.5mm);
+\pic () at (\horizdist, \vertdist) {icons={gingerbread_tree_yellow}{snowman_green}{gingerbread_man_yellow}{ornament_yellow}{mug_yellow}{tree_cookie2_green}{santa_green}{white}};
+\pic () at (0, \vertdist) {icons={snowman_green}{gingerbread_tree_green}{mug_yellow}{santa_yellow}{ornament_green}{tree_cookie2_yellow}{gingerbread_man_yellow}{white}};
+\pic () at (-\horizdist, \vertdist) {icons={tree_cookie2_green}{santa_yellow}{ornament_yellow}{mug_green}{gingerbread_man_yellow}{snowman_yellow}{gingerbread_tree_green}{white}};
+%
+\pic () at (\horizdist, 0) {icons={mug_yellow}{ornament_green}{gingerbread_man_green}{gingerbread_tree_green}{tree_cookie2_green}{snowman_yellow}{santa_green}{white}};
+\pic () at (0, 0) {icons={tree_cookie2_green}{ornament_green}{santa_yellow}{gingerbread_tree_yellow}{gingerbread_man_green}{snowman_green}{mug_green}{white}};
+\pic () at (-\horizdist, 0) {icons={gingerbread_tree_yellow}{santa_green}{mug_green}{ornament_green}{snowman_yellow}{tree_cookie2_yellow}{gingerbread_man_yellow}{white}};
+%
+\pic () at (\horizdist, -\vertdist) {icons={snowman_green}{gingerbread_tree_green}{santa_green}{mug_green}{ornament_yellow}{tree_cookie2_yellow}{gingerbread_man_green}{white}};
+\pic () at (0, -\vertdist) {icons={ornament_yellow}{gingerbread_tree_yellow}{mug_yellow}{santa_yellow}{tree_cookie2_yellow}{gingerbread_man_green}{snowman_yellow}{white}};
+\pic[rotate=180] () at (-\horizdist, -\vertdist) {scorecard={cross}{cross}{tick}{tick}{tick}{tick}{white}};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+
+\usepackage{naughtyornice}
+\usepackage{pgfplots}
+\pgfmathsetseed{6}%{11}%{1}
+\pgfplotsset{compat=1.17} 
+
+\begin{document}
+\begin{tikzpicture}[x=1in, y=1in]
+\path (-105mm, -148.5mm) -- (105mm, 148.5mm);
+\pic () at (-\horizdist, \vertdist) {icons2={snowman_green}{santa_yellow}{black}};
+\pic () at (0, \vertdist) {icons2={gingerbread_man_green}{gingerbread_tree_yellow}{black}};
+\pic () at (\horizdist, \vertdist) {icons2={ornament_green}{mug_yellow}{black}};
+%
+\pic () at (-\horizdist, 0) {icons2={santa_green}{snowman_yellow}{black}};
+\pic () at (0, 0) {icons2={gingerbread_tree_green}{tree_cookie_yellow}{black}};
+\pic () at (\horizdist, 0) {icons2={mug_green}{ornament_yellow}{black}};
+%
+\pic () at (0, -\vertdist) {icons2={tree_cookie_green}{gingerbread_man_yellow}{black}};
+\end{tikzpicture}
+\end{document}

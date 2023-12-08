@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{naughtyornice}
+
+\begin{document}
+\begin{tikzpicture}
+\path (-105mm, -148.5mm) -- (105mm, 148.5mm);
+\pic at (-\horizdist,\vertdist) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+\pic at (0,\vertdist) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+\pic at (\horizdist,\vertdist) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+
+\pic at (-\horizdist,0) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+\pic at (0,0) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+\pic at (\horizdist,0) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+
+\pic at (-\horizdist,-\vertdist) {instrumentcardbackprintable={XmasGold}{lightgray!50}};
+\pic at (0,-\vertdist) {instrumentcardbackprintable={XmasRed}{XmasGold}};
+\pic at (\horizdist,-\vertdist) {instrumentcardbackprintable={XmasGold}{lightgray!50}};
+
+\end{tikzpicture}
+\end{document}

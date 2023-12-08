@@ -1,0 +1,38 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+
+\usepackage{naughtyornice}
+\usepackage{pgfplots}
+\pgfmathsetseed{2025}%{6}%{11}%{1}
+\pgfplotsset{compat=1.17} 
+
+%                 mug
+%
+% gingerbread_man     tree_cookie
+%
+%                 orange
+%
+% ornament gingerbread_tree envelope 
+
+
+\begin{document}
+\begin{tikzpicture}[x=1in, y=1in]
+\path (-105mm, -148.5mm) -- (105mm, 148.5mm);
+\pic () at (-\horizdist, \vertdist) {icons3={gingerbread_man_green}{tree_cookie_green}{gingerbread_tree_green}{black}};
+\pic () at (0, \vertdist) {icons3={mug_pink}{tree_cookie_green}{envelope_pink}{black}};
+\pic () at (\horizdist, \vertdist) {icons3={mug_pink}{gingerbread_man_green}{ornament_pink}{black}};
+%
+\pic () at (-\horizdist, 0) {icons3={ornament_pink}{gingerbread_tree_green}{envelope_pink}{black}};
+\pic () at (0, 0) {icons3={mug_pink}{orange_yellow}{gingerbread_tree_green}{black}};
+\pic () at (\horizdist, 0) {icons3={gingerbread_man_green}{orange_yellow}{envelope_pink}{black}};
+%
+\pic[transform shape, rotate=90, scale=0.95] () at (-\horizdist, -\vertdist) {fano};
+\pic () at (-\horizdist, -\vertdist) {cutguide};
+\pic () at (0, -\vertdist) {icons3={tree_cookie_green}{orange_yellow}{ornament_pink}{black}};
+\pic[transform shape, rotate=90, scale=0.95] () at (\horizdist, -\vertdist) {fano};
+\pic () at (\horizdist, -\vertdist) {cutguide};
+
+\end{tikzpicture}
+\end{document}
