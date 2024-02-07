@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{naughtyornice}
+\usepackage[letterspace=0]{microtype}
+\usepackage{contour}
+\contourlength{0.0mm}
+\setmainfont[Scale=7.5]{Berkshire Swash}
+
+%\pagecolor{CornflowerBlue!35}
+\pagecolor{XmasBlue}
+
+\begin{document}
+\begin{tikzpicture}
+\path (-6.3cm, -5cm) -- (6.3cm, 5cm);
+\node[inner sep=0pt] at (0,2.5cm) {\textcolor{XmasRed}{\textls{Naught\hspace{1.25mm}y}}};
+\node[inner sep=0pt] at (0,0) {\textcolor{XmasWhite}{\textls{or}}};
+\node[inner sep=0pt] at (0,-2.5cm) {\textcolor{XmasGreen!85}{\textls{N\hspace{2.0mm}ice}}};
+
+\node[inner sep=0pt] at (2.5cm, -1cm) {\includegraphics[scale=0.5]{Images/white_star.png}};
+\node[inner sep=0pt] at (3.5cm, -4.0cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+\node[inner sep=0pt] at (4cm, 0.5cm) {\includegraphics[scale=0.4]{Images/white_star.png}};
+\node[inner sep=0pt] at (5cm, -2cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+\node[inner sep=0pt] at (4.75cm, 4.25cm) {\includegraphics[scale=0.4]{Images/white_star.png}};
+\node[inner sep=0pt] at (1.0cm, 4.25cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+\node[inner sep=0pt] at (0.5cm, -4.25cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+
+\node[inner sep=0pt] at (-5.25cm, 4.5cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+\node[inner sep=0pt] at (-5cm, -1.5cm) {\includegraphics[scale=0.5]{Images/white_star.png}};
+\node[inner sep=0pt] at (-2.5cm, -0.0cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+\node[inner sep=0pt] at (-3.5cm, -4.25cm) {\includegraphics[scale=0.4]{Images/white_star.png}};
+\node[inner sep=0pt] at (-4cm, 1cm) {\includegraphics[scale=0.4]{Images/white_star.png}};
+\node[inner sep=0pt] at (-1.5cm, 4cm) {\includegraphics[scale=0.3]{Images/white_star.png}};
+
+
+\end{tikzpicture}
+\end{document}
